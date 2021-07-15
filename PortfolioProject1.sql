@@ -1,9 +1,23 @@
+/*
+Covid 19 Data Exploration 
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+*/
+
+
 USE PortfolioProject;
+
+Select *
+From CovidDeaths
+Where continent is not null 
+order by 3,4
+
+
 
 -- Select Data that we are going to be using.
 
 Select Location, date, total_cases, new_cases, total_deaths, population
 From CovidDeaths
+Where continent is not null
 order by 1,2
 
 -- Looking at Total Cases vs Total Deaths
@@ -20,8 +34,7 @@ order by 1,2
 
 Select Location, date,population, total_cases, (total_cases/population)*100 as PercentofPopulationInfected
 From CovidDeaths
-Where location like '%states%' AND
-continent is not null
+--Where location like '%states%' AND
 order by 1,2
 
 
@@ -44,10 +57,10 @@ order by TotalDeathCount Desc
 
 -- LET'S BREAK THINGS DOWN BY CONTINENT
 
--- Showing continent with the highest death count
+-- Showing continent with the highest death count per population
 
 
-Select location, MAX(cast(total_deaths as int)) as TotalDeathCount
+Select location, MAX(Convert(int,total_deaths)) as TotalDeathCount
 From CovidDeaths
 Where continent is null
 Group by location
@@ -67,6 +80,7 @@ order by 1,2
 
 
 -- Looking at Total Population vs Vaccinations
+-- Shows Percentage of Population that has recieved at least one Covid Vaccine
 
 Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
 SUM(cast(vac.new_vaccinations as int)) OVER (Partition by dea.location Order by dea.location,
@@ -80,7 +94,7 @@ where dea.continent is not null
 order by 2,3
 	
 
--- USE CTE
+-- Using CTE to perform Calculation on Partition By in previous query
 
 With PopvsVac (continent, location, date, population, new_vaccinations, RollingPeopleVaccinated)
 as
@@ -100,7 +114,7 @@ Select *, (RollingPeopleVaccinated/population)*100
 From PopvsVac
 
 
---TEMP TABLE
+-- Using Temp Table to perform Calculation on Partition By in previous query
 
 DROP Table if exists #PercentPopulationVaccinated
 Create Table #PercentPopulationVaccinated
@@ -131,7 +145,9 @@ Select *, (RollingPeopleVaccinated/population)*100
 From #PercentPopulationVaccinated
 
 
--- Creating view for visualizations
+-- Creating View to store data for later visualizations
+
+DROP View if exists PercentPopulationVaccinated
 
 Create View PercentPopulationVaccinated as
 Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
