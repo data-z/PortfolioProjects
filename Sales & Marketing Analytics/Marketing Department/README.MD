@@ -10,11 +10,23 @@ In this case study, I have been hired as a consultant to a bank in New York City
 The bank has extensive data on their customers for the past 6 months. 
 The marketing team at the bank wants to launch a targeted ad marketing campaign by dividing their customers into at least 3 distinctive groups.
 
+[CLICK HERE TO GO DIRECTLY TO THE CODE IN PYTHON NOTEBOOK](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
+
+
 [Go to Data Statistics](#general-statistics-of-data)
 
 [Go to Visual Data Exploration](#visual-exploratory-data-analysis)
 
-[Click here to go directly to the code in Python Notebook](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
+[Go to Cluster Analysis](#cluster-analysis)
+
+[Go to K-Means Analysis](#apply-k-means-method-for-cluster-analysis)
+
+[K-Means Cluster Visualization Using PCA](#k-means-cluster-visualization-using-principle-component-analysis-pca)
+
+[Dimensional Reduction Using Autoencoders](#dimensional-reduction-using-autoencoders)
+
+[Recommendations For Marketing](#recommendations-for-marketing)
+
 
 ## The Data
 
@@ -190,7 +202,7 @@ Scaled Inertia Method: Based on the Scaled Inertia Method the optimal number of 
 We used PCA to create a visual for the Autoencoded model.
 ![Autoencoder PCA Plot](images/EA_PCA_Plot.png)
 
-Because of the complexity of the Autoencoder, it is very difficult to find out what actual dimensions were used. As a workaround we created a dataframe that joins the reduced clusters to the original data and then created a cluster center dataframe by using the means fo the data. We finally analyzed the data and updated the categories and definitions.
+Because of the complexity of the Autoencoder, it is very difficult to find out what actual dimensions were used. As a workaround we created a dataframe that joins the reduced clusters to the original data and then created a cluster center dataframe by using the means of the data. We finally analyzed the data and updated the categories and definitions.
 
 **Cluster 0 - Low Balance, Low Activity Spender:**
 - Customers in this cluster have the lowest balance and tend to engage in purchases infrequently. The majority of their purchases are one-off rather than installments, suggesting occasional, significant spending. However, they do take cash advances relatively often considering their low purchase frequency.
