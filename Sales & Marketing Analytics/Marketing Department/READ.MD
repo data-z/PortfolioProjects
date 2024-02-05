@@ -10,7 +10,7 @@ In this case study, I have been hired as a consultant to a bank in New York City
 The bank has extensive data on their customers for the past 6 months. 
 The marketing team at the bank wants to launch a targeted ad marketing campaign by dividing their customers into at least 3 distinctive groups.
 
-[Go to Statistics](### General Statistics of Data)
+[Go to Statistics](# general-statistics-of-data)
 
 [Click here to go directly to the code in Python Notebook](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
 
@@ -68,7 +68,7 @@ We imputed the missing data points with the mean of each variable. We also drop 
 The first visual is a DistPlot that combines a Histogram with a Kernel Density Estimate Plot (KDE Plot). 
 KDE demonstrates the probability density at different values in a continuous variable.
 [You can view all DistPlot Images Here](https://github.com/data-z/PortfolioProjects/tree/4f86588dd9230fd3d9d2ff3680325801ab922737/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/images) 
-[Balance DistPlot](images/BALANCE_KDE_histogram.png)
+![Balance DistPlot](images/BALANCE_KDE_histogram.png)
 
 Upon analysis of the plots it was concluded that all the variables were non-normal distributions. 
 We also observed some specific information in the data such as:
