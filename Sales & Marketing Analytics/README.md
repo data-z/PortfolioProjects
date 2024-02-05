@@ -1,3 +1,3 @@
 # Sales & Marketing Analytics Projects
 
-## [Marketing Projects](Marketing Department/README.md)
+## [Marketing Projects](Marketing Department/README.MD)
