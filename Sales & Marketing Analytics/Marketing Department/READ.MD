@@ -202,7 +202,7 @@ Scaled Inertia Method: Based on the Scaled Inertia Method the optimal number of 
 We used PCA to create a visual for the Autoencoded model.
 ![Autoencoder PCA Plot](images/EA_PCA_Plot.png)
 
-Because of the complexity of the Autoencoder, it is very difficult to find out what actual dimensions were used. As a workaround we created a dataframe that joins the reduced clusters to the original data and then created a cluster center dataframe by using the means fo the data. We finally analyzed the data and updated the categories and definitions.
+Because of the complexity of the Autoencoder, it is very difficult to find out what actual dimensions were used. As a workaround we created a dataframe that joins the reduced clusters to the original data and then created a cluster center dataframe by using the means of the data. We finally analyzed the data and updated the categories and definitions.
 
 **Cluster 0 - Low Balance, Low Activity Spender:**
 - Customers in this cluster have the lowest balance and tend to engage in purchases infrequently. The majority of their purchases are one-off rather than installments, suggesting occasional, significant spending. However, they do take cash advances relatively often considering their low purchase frequency.
