@@ -169,7 +169,16 @@ This is the K-Mean Clusters reduced to 2 dimensions for visualization.
 
 Autoencoders, a type of neural network, serve as a powerful tool for dimensionality reduction, particularly effective in distilling complex, high-dimensional data into a more compact and meaningful representation. When applied before K-means clustering, autoencoders learn to encode the data into a lower-dimensional space (the bottleneck layer) and then decode it back to its original dimension, capturing the most salient features in this process. This compressed representation, often more informative than the raw high-dimensional data, can significantly enhance K-means clustering by focusing on the core characteristics of the data, thereby leading to more distinct and interpretable clusters. This approach is especially beneficial for datasets where linear methods like PCA fall short, such as those with non-linear relationships, enabling a more nuanced understanding of the data's underlying structure through clustering.
 
-### Finding the optimal number of clusters
+### Finding the Optimal Number of Clusters
+In this section we used the same methods as above to find the optimal number of clusters.
+
+Elbow Method: Based on the Elbow Method the optimal number of clusters was 4-5 that is approximately when the values begin to reduce linearly.
+![Autoencoder Elbow](images/AutoencoderElbow.png)
+---
+Scaled Inertia Method: Based on the Elbow Method the optimal number of clusters was 8 that is the number of clusters that have the minimum adjusted inertia.
+
+![Autoencoder Scaled Inertia](images/AutoencoderScaledInertia.png)
+
 
 
 
