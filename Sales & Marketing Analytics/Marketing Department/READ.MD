@@ -90,8 +90,9 @@ Most correlations are between related categories ie. Purchase Frequency and Purc
 
 Before finding the optimal number of clusters, the data was scaled.knowing the distribution of the data is important when scaling, 
 if most of the variables are normally distibuted we can get away with using the StandarScaler because it is not sensitive to outliers,
-However, if most the variable have a non-normal distibution MinMaxScaler would be a better choice since in this data's case we do not want to mitigate outliers.
-[We'll write some code to pick the best scaler based on the distributions](Marketing_Department.ipynb#task--4--find-the-optimal-number-of-clusters-using-elbow-method-and-scaled-inertia). 
+However, if most the variable have a non-normal distibution MinMaxScaler would be a better choice since in this data's case we do not want to mitigate outliers. 
+[We'll write some code to pick the best scaler based on the distributions](Marketing_Department.ipynb#task--4--find-the-optimal-number-of-clusters-using-elbow-method-and-scaled-inertia).
+MinMaxScaler was picked since there appears to be no normally distibuted variables.
 
 ### Finding the Optimal Number of Clusters
 **In this next task we will be finding the optimal number of cluster in order to perform K-means analysis.**
@@ -103,6 +104,11 @@ Elbow Method: Based on the Elbow Method the optimal number of clusters was 7-8.
 ---
 Scaled Inertia Method: Based on the Elbow Method the optimal number of clusters was 10.
 ![Scaled Inertia Method](images/Scaled_Inertia_WCSS_Scores.png)
+
+### [Apply K-Means Method for Cluster Analysis](Marketing_Department.ipynb#task-5-apply-k-means-method)
+
+
+
 
 
 
