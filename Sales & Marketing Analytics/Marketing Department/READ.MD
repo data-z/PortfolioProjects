@@ -65,7 +65,7 @@ We imputed the missing data points with the mean of each variable. We also drop 
 ## Visual Exploratory Data Analysis
 The first visual is a DistPlot that combines a Histogram with a Kernel Density Estimate Plot (KDE Plot). 
 KDE demonstrates the probability density at different values in a continuous variable.
-[You can view all DistPlot Images Here]() 
+[You can view all DistPlot Images Here](Sales & Marketing Analytics/Marketing Department/images) 
 ![Balance DistPlot](images/BALANCE_KDE_histogram.png)
 
 
