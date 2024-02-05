@@ -99,10 +99,12 @@ MinMaxScaler was picked since there appears to be no normally distibuted variabl
 We will be using 2 different techniques, the Elbow method and scaled Inertia. The Elbow Method is created by plotting the Within-Cluster Sum of Squares points and finding the point that forms the Elbow as the optimal number of clusters. The Scaled Inertia Method uses weighted inertial defined by an picked Alpha value and then automatically picks the number of clusters using the minimum adjusted inertia. **The Scaled Inertia Method was chosing for this project.**
 [Please see the notebook for the code!](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
 
-Elbow Method: Based on the Elbow Method the optimal number of clusters was 7-8 that is aproxiatley when the values begin to reduce linearly.
+Elbow Method: Based on the Elbow Method the optimal number of clusters is 7-8 that is aproxiatley when the values begin to reduce linearly.
+
 ![Elbow Method](images/Elbow_WCSS_Scores.png)
 ---
-Scaled Inertia Method: Based on the Elbow Method the optimal number of clusters was 10 that is the number of clusters that have the minimum adjusted inertia.
+Scaled Inertia Method: Based on the Scaled Inertia Method the optimal number of clusters is 10 that is the number of clusters that have the minimum adjusted inertia.
+
 ![Scaled Inertia Method](images/Scaled_Inertia_WCSS_Scores.png)
 
 ### Apply K-Means Method for Cluster Analysis
@@ -167,7 +169,29 @@ This is the K-Mean Clusters reduced to 2 dimensions for visualization.
 
 Autoencoders, a type of neural network, serve as a powerful tool for dimensionality reduction, particularly effective in distilling complex, high-dimensional data into a more compact and meaningful representation. When applied before K-means clustering, autoencoders learn to encode the data into a lower-dimensional space (the bottleneck layer) and then decode it back to its original dimension, capturing the most salient features in this process. This compressed representation, often more informative than the raw high-dimensional data, can significantly enhance K-means clustering by focusing on the core characteristics of the data, thereby leading to more distinct and interpretable clusters. This approach is especially beneficial for datasets where linear methods like PCA fall short, such as those with non-linear relationships, enabling a more nuanced understanding of the data's underlying structure through clustering.
 
-### Finding the optimal number of clusters
+### Autoencoder Process
+The process starts with the input data, which goes through several layers of processing, each reducing the data further. The first layer reduces the data from 17 features to 7, and subsequent layers increase the complexity temporarily to 500 and then to 2000. However, the crucial part is the 'encoded' layer, where the data is compressed down to just 10 key features. This is the heart of the autoencoder, capturing the essence of the data in a more manageable form.
+[Please see the notebook for the actual code details](Marketing_department.ipynb)
+
+### Finding the Optimal Number of Clusters
+
+*In this section we used the same methods as above to find the optimal number of clusters*
+
+Elbow Method: Based on the Elbow Method the optimal number of clusters is 5-6 that is approximately when the values begin to reduce linearly
+
+![Autoencoder Elbow](images/AutoencoderElbow.png)
+
+---
+Scaled Inertia Method: Based on the Scaled Inertia Method the optimal number of clusters is 8 that is the number of clusters that have the minimum adjusted inertia
+
+![Autoencoder Scaled Inertia](images/AutoencoderScaledInertia.png)
+
+### Autoencoder Results
+We used PCA to create a visual for the Autoencoded model.
+![Autoencoder PCA Plot](images/EA_PCA_Plot.png)
+
+
+
 
 
 
