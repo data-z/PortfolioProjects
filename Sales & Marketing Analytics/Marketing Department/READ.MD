@@ -10,6 +10,8 @@ In this case study, I have been hired as a consultant to a bank in New York City
 The bank has extensive data on their customers for the past 6 months. 
 The marketing team at the bank wants to launch a targeted ad marketing campaign by dividing their customers into at least 3 distinctive groups.
 
+[Go to Statistics](### General Statistics of Data)
+
 [Click here to go directly to the code in Python Notebook](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
 
 ## The Data
@@ -66,7 +68,7 @@ We imputed the missing data points with the mean of each variable. We also drop 
 The first visual is a DistPlot that combines a Histogram with a Kernel Density Estimate Plot (KDE Plot). 
 KDE demonstrates the probability density at different values in a continuous variable.
 [You can view all DistPlot Images Here](https://github.com/data-z/PortfolioProjects/tree/4f86588dd9230fd3d9d2ff3680325801ab922737/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/images) 
-![Balance DistPlot](images/BALANCE_KDE_histogram.png)
+[Balance DistPlot](images/BALANCE_KDE_histogram.png)
 
 Upon analysis of the plots it was concluded that all the variables were non-normal distributions. 
 We also observed some specific information in the data such as:
@@ -84,7 +86,7 @@ Most correlations are between related categories ie. Purchase Frequency and Purc
 
 ## Cluster Analysis
 **In this next task we will be finding the optimal number of cluster in order to perform K-means analysis.**
-We will be using 2 different techniques, the Elbow method and scaled Inertia. The Elbow Method is created by plotting the Within-Cluster Sum of Squares points and finding the point that forms the Elbow as the optimal number of clusters. The Scaled Inertia Method uses weighted inertial defined by an picked Alpha value and then automatically picks the number of clusters. The Scaled Inertia Method was chosing for this project.
+We will be using 2 different techniques, the Elbow method and scaled Inertia. The Elbow Method is created by plotting the Within-Cluster Sum of Squares points and finding the point that forms the Elbow as the optimal number of clusters. The Scaled Inertia Method uses weighted inertial defined by an picked Alpha value and then automatically picks the number of clusters using the minimum adjusted inertia. The Scaled Inertia Method was chosing for this project.
 [Please see the notebook for the code!](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
 
 Elbow Method: Based on the Elbow Method the optimal number of clusters was 7-8.
@@ -92,6 +94,8 @@ Elbow Method: Based on the Elbow Method the optimal number of clusters was 7-8.
 ---
 Scaled Inertia Method: Based on the Elbow Method the optimal number of clusters was 10.
 ![Scaled Inertia Method](images/Scaled_Inertia_WCSS_Scores.png)
+
+
 
 
 
