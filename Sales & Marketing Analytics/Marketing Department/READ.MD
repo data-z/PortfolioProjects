@@ -89,8 +89,8 @@ We will be using 2 different techniques, the Elbow method and scaled Inertia. Th
 
 Elbow Method: Based on the Elbow Method the optimal number of clusters was 7-8.
 ![Elbow Method](images/Elbow_WCSS_Scores.png)
-
-Scaled Inertia Method:
+---
+Scaled Inertia Method: Based on the Elbow Method the optimal number of clusters was 10.
 ![Scaled Inertia Method](images/Scaled_Inertia_WCSS_Scores.png)
 
 
