@@ -113,9 +113,7 @@ After fitting the data to the K-Means model, we created a cluster center datafra
 ***Below are the categories and descriptions concluded from the cluster centers:***
 
 **Cluster 0 - Occasional Spender with Low Balance:**
-
 *Category: "Occasional Spender"*
-
 Description: Customers in this cluster have a relatively low balance, infrequently update it, and make moderate purchases, suggesting they use their credit cards for occasional spending.
 
 **Cluster 1 - Responsible Moderate Spender:**
@@ -153,6 +151,18 @@ Description: Customers in this cluster have moderate balances, make moderate pur
 **Cluster 9 - High Spender with Full Payments:**
 *Category: "High Spender (Full Payments)"*
 Description: Customers in this cluster maintain a low balance, frequently update it, make high purchases, and exhibit a high percentage of full payments, suggesting responsible credit card usage with frequent full payments.
+
+**Lets see what clusters our earlier observation of the Max One-Off and Max Cash Advance Customers fall in.**
+The customer with the highest One-Off Purchases is in cluster 6 which is Extremely High-Balance Low Spender.
+The customer with the highest Cash Advances is in cluster 3 whcih is High-Volume One-Off Spender.
+
+### K-Means Cluster Visualization Using Principle Component Analysis (PCA)
+Principal Component Analysis (PCA) is a dimensionality reduction method that transforms a dataset with multiple dimensions into a smaller set of linearly uncorrelated variables known as principal components, which retain most of the variability present in the data. When applied prior to K-means clustering, PCA facilitates visualization in two or three dimensions, enhances computational efficiency, reduces noise, and can improve cluster separation by mitigating the curse of dimensionality. This pre-processing step can lead to more insightful and meaningful clustering results, particularly when dealing with complex, high-dimensional datasets.
+
+This is the K-Mean Clusters reduced to 2 dimensions for visualization.
+![PCA Plot](images/PCA_Plot.png)
+
+
 
 
 
