@@ -100,9 +100,11 @@ We will be using 2 different techniques, the Elbow method and scaled Inertia. Th
 [Please see the notebook for the code!](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
 
 Elbow Method: Based on the Elbow Method the optimal number of clusters was 7-8 that is aproxiatley when the values begin to reduce linearly.
+
 ![Elbow Method](images/Elbow_WCSS_Scores.png)
 ---
 Scaled Inertia Method: Based on the Elbow Method the optimal number of clusters was 10 that is the number of clusters that have the minimum adjusted inertia.
+
 ![Scaled Inertia Method](images/Scaled_Inertia_WCSS_Scores.png)
 
 ### Apply K-Means Method for Cluster Analysis
