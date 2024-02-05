@@ -91,7 +91,7 @@ Most correlations are between related categories ie. Purchase Frequency and Purc
 Before finding the optimal number of clusters, the data was scaled.knowing the distribution of the data is important when scaling, 
 if most of the variables are normally distibuted we can get away with using the StandarScaler because it is not sensitive to outliers,
 However, if most the variable have a non-normal distibution MinMaxScaler would be a better choice since in this data's case we do not want to mitigate outliers.
-[We'll write some code to pick the best scaler based on the distributions](Marketing_Department.ipynb#TASK-#4:-FIND-THE-OPTIMAL-NUMBER-OF-CLUSTERS-USING-ELBOW-METHOD-AND-SCALED-INERTIA). 
+[We'll write some code to pick the best scaler based on the distributions](Marketing_Department.ipynb#task--4:-find-the-optimal-number-of-clusters-using-elbow-method-and-scaled-inertia). 
 
 ### Finding the Optimal Number of Clusters
 **In this next task we will be finding the optimal number of cluster in order to perform K-means analysis.**
