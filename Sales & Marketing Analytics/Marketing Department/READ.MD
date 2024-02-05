@@ -18,7 +18,7 @@ The marketing team at the bank wants to launch a targeted ad marketing campaign 
 
 [Go to K-Means Analysis](#apply-k-means-method-for-cluster-analysis)
 
-[PCA for K-Means Visualization](#k-means-cluster-visualization-using-principle-component-analysis—pca-)
+[PCA for K-Means Visualization](#k-means-cluster-visualization-using-principle-component-analysis-(pca))
 
 
 
