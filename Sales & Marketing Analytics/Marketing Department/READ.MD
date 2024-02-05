@@ -35,3 +35,39 @@ See Columns and definitions below:
 - MINIMUM_PAYMENTS: Minimum amount of payments made by user
 - PRC_FULL_PAYMENT: Percent of full payment paid by user
 - TENURE: Tenure of credit card service for user
+
+### General Statistics of Data
+
+- Mean balance is $1564
+- Balance frequency is frequently updated on average ~0.9
+- Purchases average is $1000
+- one off purchase average is ~$600
+- Average purchases frequency is around 0.5
+- average ONEOFF_PURCHASES_FREQUENCY, PURCHASES_INSTALLMENTS_FREQUENCY, and CASH_ADVANCE_FREQUENCY are generally low
+- Average credit limit ~ 4500
+- Percent of full payment is 15%
+- Average tenure is 11 years
+
+We looked at the customer with the highest One-Off Purchases and found:
+- This customer has 101 purchase transactions 
+- They have an $11,500 balance
+- The customer does not use the cash advance alot but they make frequent purchases
+- The customer only pays in full 25% of the time
+
+We looked at the customer with the higest Cash Advances and found:
+- This customer made 123 cash advance transactions!!
+- They appear to use the cash advance more than purchases for some reason
+- Never paid the credit card in full
+
+After exploring the data for missing data we found **1 missing datapoint for Credit_Limit** and **313 missing data points for Minimum_Payment**.
+We imputed the missing data points with the mean of each variable. We also drop any duplicate records and dropped the CUST_ID column since it has no meaning.
+
+## Visual Exploratory Data Analysis
+The first visual is a DistPlot that combines a Histogram with a Kernel Density Estimate Plot (KDE Plot). 
+KDE demonstrates the probability density at different values in a continuous variable.
+ 
+![Balance DistPlot](images/BALANCE_KDE_histogram.png)
+
+
+
+
