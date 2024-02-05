@@ -14,6 +14,14 @@ The marketing team at the bank wants to launch a targeted ad marketing campaign 
 
 [Go to Visual Data Exploration](#visual-exploratory-data-analysis)
 
+[Go to Cluster Analysis](#cluster-analysis)
+
+[Go to K-Means Analysis](#apply-k-means-method-for-cluster-analysis)
+
+[PCA for K-Means Visualization](#k-means-cluster-visualization-using-principle-component-analysis—pca-)
+
+
+
 [Click here to go directly to the code in Python Notebook](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
 
 ## The Data
