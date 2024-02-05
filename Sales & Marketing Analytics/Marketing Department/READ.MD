@@ -162,6 +162,14 @@ Principal Component Analysis (PCA) is a dimensionality reduction method that tra
 This is the K-Mean Clusters reduced to 2 dimensions for visualization.
 ![PCA Plot](images/PCA_Plot.png)
 
+## Dimensional Reduction Using Autoencoders
+***In this section we will use Autoencoden to reduce the dimensions and then run the KMeans Clustering again on the reduced dimensions.***
+
+Autoencoders, a type of neural network, serve as a powerful tool for dimensionality reduction, particularly effective in distilling complex, high-dimensional data into a more compact and meaningful representation. When applied before K-means clustering, autoencoders learn to encode the data into a lower-dimensional space (the bottleneck layer) and then decode it back to its original dimension, capturing the most salient features in this process. This compressed representation, often more informative than the raw high-dimensional data, can significantly enhance K-means clustering by focusing on the core characteristics of the data, thereby leading to more distinct and interpretable clusters. This approach is especially beneficial for datasets where linear methods like PCA fall short, such as those with non-linear relationships, enabling a more nuanced understanding of the data's underlying structure through clustering.
+
+
+
+
 
 
 
