@@ -105,7 +105,52 @@ Elbow Method: Based on the Elbow Method the optimal number of clusters was 7-8.
 Scaled Inertia Method: Based on the Elbow Method the optimal number of clusters was 10.
 ![Scaled Inertia Method](images/Scaled_Inertia_WCSS_Scores.png)
 
-### [Apply K-Means Method for Cluster Analysis](Marketing_Department.ipynb#task-5-apply-k-means-method)
+### Apply K-Means Method for Cluster Analysis
+
+After fitting the data to the K-Means model, we created a cluster center dataframe, inversed the scaled values and did some further analsysis. 
+[The dataframe can be found in the code here.](Marketing_Department.ipynb#task-5-apply-k-means-method)
+
+***Below are the categories and descriptions concluded from the cluster centers:***
+
+**Cluster 0 - Occasional Spender with Low Balance:**
+*Category: "Occasional Spender"*
+Description: Customers in this cluster have a relatively low balance, infrequently update it, and make moderate purchases, suggesting they use their credit cards for occasional spending.
+
+**Cluster 1 - Responsible Moderate Spender:**
+*Category: "Moderate Spender"*
+Description: Customers in this cluster maintain a low balance but frequently update it, make moderate to high purchases (mainly installments), and exhibit responsible credit card usage.
+
+**Cluster 2 - Balanced Moderate Spender:**
+*Category: "Balanced Spender"*
+Description: Customers in this cluster have a high balance, frequently update it, make moderate purchases (a mix of one-off and installments), and manage their credit card balance well.
+
+**Cluster 3 - High-Volume One-Off Spender:**
+*Category: "One-Off Spender"*
+Description: Customers in this cluster maintain very high balances, frequently update them, and make high purchases, primarily through one-off transactions, indicating significant one-time expenses.
+
+**Cluster 4 - Balanced Moderate Spender (Installment Focus):**
+*Category: "Balanced Spender"*
+Description: Customers in this cluster have a high balance, frequently update it, make moderate purchases (mainly through installment payments), and manage their credit card balance well.
+
+**Cluster 5 - High-Balance Low Spender:**
+*Category: "Low Spender"*
+Description: Customers in this cluster maintain very high balances, frequently update them, but make low purchases and rarely engage in cash advances, suggesting they may use their credit cards as a financial tool rather than for spending.
+
+**Cluster 6 - Extremely High-Balance Low Spender:**
+*Category: "Low Spender (Extremely High Balance)"*
+Description: Customers in this cluster have extremely high balances, frequently update them, but make very low purchases and rarely engage in cash advances, indicating an emphasis on credit card balance management.
+
+**Cluster 7 - High-Volume Spender with High Balance:**
+*Category: "High Spender"*
+Description: Customers in this cluster have very high balances, frequently update them, make high purchases, and maintain a moderate cash advance frequency, indicating a substantial credit card usage pattern.
+
+**Cluster 8 - Moderate Spender with Low Payments:**
+*Category: "Moderate Spender (Low Payments)"*
+Description: Customers in this cluster have moderate balances, make moderate purchases, but have lower payment amounts, possibly indicating a need for better payment management.
+
+**Cluster 9 - High Spender with Full Payments:**
+*Category: "High Spender (Full Payments)"*
+Description: Customers in this cluster maintain a low balance, frequently update it, make high purchases, and exhibit a high percentage of full payments, suggesting responsible credit card usage with frequent full payments.
 
 
 
