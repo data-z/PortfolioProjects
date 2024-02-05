@@ -68,6 +68,18 @@ KDE demonstrates the probability density at different values in a continuous var
 [You can view all DistPlot Images Here](https://github.com/data-z/PortfolioProjects/tree/4f86588dd9230fd3d9d2ff3680325801ab922737/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/images) 
 ![Balance DistPlot](images/BALANCE_KDE_histogram.png)
 
+Upon analysis of the plots it was concluded that all the variables were non-normal distributions. 
+We also observed some specific information in the data such as:
+- Mean of balance is $1500
+- 'Balance_Frequency' for most customers is updated frequently ~1
+- For 'PURCHASES_FREQUENCY', there are two distinct group of customers
+- For 'ONEOFF_PURCHASES_FREQUENCY' and 'PURCHASES_INSTALLMENT_FREQUENCY' most users don't do one off puchases or installment purchases frequently
+- Very small number of customers pay their balance in full 'PRC_FULL_PAYMENT'~0
+- Credit limit average is around $4500
+- Most customers are ~11-12 years tenure
+
+
+
 
 
 
