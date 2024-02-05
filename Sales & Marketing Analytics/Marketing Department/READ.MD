@@ -192,52 +192,26 @@ We used PCA to create a visual for the Autoencoded model.
 
 Because of the complexity of the Autoencoder, it is very difficult to find out what actual dimensions were used. As a workaround we created a dataframe that joins the reduced clusters to the original data and then created a cluster center dataframe by using the means fo the data. We finally analyzed the data and updated the categories and definitions.
 
-Cluster 0 - "Low Balance, Low Activity Spender":
+Cluster 0 - Low Balance, Low Activity Spender:
 - Customers in this cluster have the lowest balance and tend to engage in purchases infrequently. The majority of their purchases are one-off rather than installments, suggesting occasional, significant spending. However, they do take cash advances relatively often considering their low purchase frequency.
 
-Cluster 1 - "High Balance, Controlled Spender":
+Cluster 1 - High Balance, Controlled Spender:
 - This cluster includes customers with high balances who update their balances frequently and engage in purchases quite actively. They have a balanced mix of one-off and installment purchases, indicating a controlled approach to spending. Their cash advance usage is moderate, and they have a high credit limit, suggesting good financial management.
 
-Cluster 2 - "Moderate Balance, Diverse Spender":
+Cluster 2 - Moderate Balance, Diverse Spender:
 - Customers here have moderate balances and engage in both one-off and installment purchases. Their purchase frequency is average, and they use cash advances less frequently than the first two clusters. They tend to have a reasonable credit limit and manage their finances averagely in terms of payments and full payment percentages.
 
-Cluster 3 - "High Balance, Low Purchase Frequency":
+Cluster 3 - High Balance, Low Purchase Frequency:
 - This cluster is characterized by high balances and very low purchase frequencies. Their purchases are minor and infrequent, and they rely more on cash advances. They have a higher number of cash advance transactions despite their low purchase frequency, indicating a preference for cash liquidity.
 
-Cluster 4 - "Active, High Spending":
+Cluster 4 - Active, High Spending:
 - Customers in this cluster have very high purchase activities, especially in one-off transactions, which suggests that they make large, infrequent purchases. They also have the highest credit limit, which aligns with their spending behavior. They maintain a good balance and tend to pay a significant portion of their bill in full.
 
-Cluster 5 - "Conservative, Low Balance Spender":
+Cluster 5 - Conservative, Low Balance Spender:
 - With the lowest cash advance usage and very high purchase frequency, especially in installments, these customers seem to use their credit cards cautiously for smaller, regular expenses rather than large purchases or cash advances. They exhibit high tenure and a high percentage of full payment, indicating disciplined financial behavior.
 
-Cluster 6 - "High Balance, Cash Advance User":
+Cluster 6 - High Balance, Cash Advance User:
 - This cluster's defining characteristic is a very high balance coupled with the highest cash advance usage and frequency, indicating a reliance on credit for liquidity rather than purchases. Their purchase frequency is somewhat lower, and they have a long tenure, which might suggest established credit lines used for managing cash flow rather than spending.
 
-Cluster 7 - "Balanced, Frequent Purchaser":
+Cluster 7 - Balanced, Frequent Purchaser:
 - Customers in this cluster maintain high balances and engage frequently in both one-off and installment purchases. They have a moderate use of cash advances and a high credit limit. Their payment behavior is stable, with a moderate percentage of full payments, suggesting they are regular credit card users for everyday spending.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
