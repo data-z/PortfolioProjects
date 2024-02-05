@@ -113,9 +113,7 @@ After fitting the data to the K-Means model, we created a cluster center datafra
 ***Below are the categories and descriptions concluded from the cluster centers:***
 
 **Cluster 0 - Occasional Spender with Low Balance:**
-
 *Category: "Occasional Spender"*
-
 Description: Customers in this cluster have a relatively low balance, infrequently update it, and make moderate purchases, suggesting they use their credit cards for occasional spending.
 
 **Cluster 1 - Responsible Moderate Spender:**
