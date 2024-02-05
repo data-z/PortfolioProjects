@@ -178,12 +178,19 @@ The process starts with the input data, which goes through several layers of pro
 *In this section we used the same methods as above to find the optimal number of clusters*
 
 Elbow Method: Based on the Elbow Method the optimal number of clusters is 5-6 that is approximately when the values begin to reduce linearly
+
 ![Autoencoder Elbow](images/AutoencoderElbow.png)
 
-
+---
 Scaled Inertia Method: Based on the Scaled Inertia Method the optimal number of clusters is 8 that is the number of clusters that have the minimum adjusted inertia
 
 ![Autoencoder Scaled Inertia](images/AutoencoderScaledInertia.png)
+
+### Autoencoder Results
+We used PCA to create a visual for the Autoencoded model.
+![Autoencoder PCA Plot](images/EA_PCA_Plot.png)
+
+
 
 
 
