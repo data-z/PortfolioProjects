@@ -87,8 +87,15 @@ Most correlations are between related categories ie. Purchase Frequency and Purc
 ![Corr Heat Map](images/Correlations_Heat_Map.png)
 
 ## Cluster Analysis
+
+Before finding the optimal number of clusters, the data was scaled.knowing the distribution of the data is important when scaling, 
+if most of the variables are normally distibuted we can get away with using the StandarScaler because it is not sensitive to outliers,
+However, if most the variable have a non-normal distibution MinMaxScaler would be a better choice since in this data's case we do not want to mitigate outliers.
+We'll write some code to pick the best scaler based on the distributions. 
+
+### Finding the Optimal Number of Clusters
 **In this next task we will be finding the optimal number of cluster in order to perform K-means analysis.**
-We will be using 2 different techniques, the Elbow method and scaled Inertia. The Elbow Method is created by plotting the Within-Cluster Sum of Squares points and finding the point that forms the Elbow as the optimal number of clusters. The Scaled Inertia Method uses weighted inertial defined by an picked Alpha value and then automatically picks the number of clusters using the minimum adjusted inertia. The Scaled Inertia Method was chosing for this project.
+We will be using 2 different techniques, the Elbow method and scaled Inertia. The Elbow Method is created by plotting the Within-Cluster Sum of Squares points and finding the point that forms the Elbow as the optimal number of clusters. The Scaled Inertia Method uses weighted inertial defined by an picked Alpha value and then automatically picks the number of clusters using the minimum adjusted inertia. **The Scaled Inertia Method was chosing for this project.**
 [Please see the notebook for the code!](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
 
 Elbow Method: Based on the Elbow Method the optimal number of clusters was 7-8.
