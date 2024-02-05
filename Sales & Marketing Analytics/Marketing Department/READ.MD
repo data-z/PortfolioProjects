@@ -78,7 +78,9 @@ We also observed some specific information in the data such as:
 - Credit limit average is around $4500
 - Most customers are ~11-12 years tenure
 
-
+### Correlations
+Most correlations are between related categories ie. Purchase Frequency and Purchase Transactions ect.
+![Corr Heat Map](images/Correlations_Heat_Map.png)
 
 
 
