@@ -57,9 +57,9 @@ See Columns and definitions below:
 - Mean balance is $1564
 - Balance frequency is frequently updated on average ~0.9
 - Purchases average is $1000
-- one off purchase average is ~$600
-- Average purchases frequency is around 0.5
-- average ONEOFF_PURCHASES_FREQUENCY, PURCHASES_INSTALLMENTS_FREQUENCY, and CASH_ADVANCE_FREQUENCY are generally low
+- One Off purchase average is ~$600
+- Average purchase frequency is around 0.5
+- Average ONEOFF_PURCHASES_FREQUENCY, PURCHASES_INSTALLMENTS_FREQUENCY, and CASH_ADVANCE_FREQUENCY are generally low
 - Average credit limit ~ 4500
 - Percent of full payment is 15%
 - Average tenure is 11 years
@@ -67,10 +67,10 @@ See Columns and definitions below:
 We looked at the customer with the highest One-Off Purchases and found:
 - This customer has 101 purchase transactions 
 - They have an $11,500 balance
-- The customer does not use the cash advance alot but they make frequent purchases
+- The customer does not use the cash advance a lot but they make frequent purchases
 - The customer only pays in full 25% of the time
 
-We looked at the customer with the higest Cash Advances and found:
+We looked at the customer with the highest Cash Advances and found:
 - This customer made 123 cash advance transactions!!
 - They appear to use the cash advance more than purchases for some reason
 - Never paid the credit card in full
@@ -89,29 +89,29 @@ We also observed some specific information in the data such as:
 - Mean of balance is $1500
 - 'Balance_Frequency' for most customers is updated frequently ~1
 - For 'PURCHASES_FREQUENCY', there are two distinct group of customers
-- For 'ONEOFF_PURCHASES_FREQUENCY' and 'PURCHASES_INSTALLMENT_FREQUENCY' most users don't do one off puchases or installment purchases frequently
+- For 'ONEOFF_PURCHASES_FREQUENCY' and 'PURCHASES_INSTALLMENT_FREQUENCY' most users don't do one off purchases or installment purchases frequently
 - Very small number of customers pay their balance in full 'PRC_FULL_PAYMENT'~0
 - Credit limit average is around $4500
 - Most customers are ~11-12 years tenure
 
 ### Correlations
-Most correlations are between related categories ie. Purchase Frequency and Purchase Transactions ect.
+Most correlations are between related categories i.e. Purchase Frequency and Purchase Transactions etc.
 ![Corr Heat Map](images/Correlations_Heat_Map.png)
 
 ## Cluster Analysis
 
-Before finding the optimal number of clusters, the data was scaled.knowing the distribution of the data is important when scaling, 
-if most of the variables are normally distibuted we can get away with using the StandarScaler because it is not sensitive to outliers,
-However, if most the variable have a non-normal distibution MinMaxScaler would be a better choice since in this data's case we do not want to mitigate outliers. 
+Before finding the optimal number of clusters, the data was scaled, knowing the distribution of the data is important when scaling, 
+if most of the variables are normally distributed  we can get away with using the StandarScaler because it is not sensitive to outliers,
+However, if most the variables have a non-normal distribution MinMaxScaler would be a better choice since in this data's case we do not want to mitigate outliers. 
 [We'll write some code to pick the best scaler based on the distributions](Marketing_Department.ipynb#task--4--find-the-optimal-number-of-clusters-using-elbow-method-and-scaled-inertia).
-MinMaxScaler was picked since there appears to be no normally distibuted variables.
+MinMaxScaler was picked since there appears to be no normally distributed variables.
 
 ### Finding the Optimal Number of Clusters
 **In this next task we will be finding the optimal number of cluster in order to perform K-means analysis.**
-We will be using 2 different techniques, the Elbow method and scaled Inertia. The Elbow Method is created by plotting the Within-Cluster Sum of Squares points and finding the point that forms the Elbow as the optimal number of clusters. The Scaled Inertia Method uses weighted inertial defined by an picked Alpha value and then automatically picks the number of clusters using the minimum adjusted inertia. **The Scaled Inertia Method was chosing for this project.**
+We will be using 2 different techniques, the Elbow method and scaled Inertia. The Elbow Method is created by plotting the Within-Cluster Sum of Squares points and finding the point that forms the Elbow as the optimal number of clusters. The Scaled Inertia Method uses weighted inertial defined by an picked Alpha value and then automatically picks the number of clusters using the minimum adjusted inertia. **The Scaled Inertia Method was chosen for this project.**
 [Please see the notebook for the code!](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
 
-Elbow Method: Based on the Elbow Method the optimal number of clusters is 7-8 that is aproxiatley when the values begin to reduce linearly.
+Elbow Method: Based on the Elbow Method the optimal number of clusters is 7-8 that is approximately when the values begin to reduce linearly.
 
 ![Elbow Method](images/Elbow_WCSS_Scores.png)
 ---
@@ -121,7 +121,7 @@ Scaled Inertia Method: Based on the Scaled Inertia Method the optimal number of 
 
 ### Apply K-Means Method for Cluster Analysis
 
-After fitting the data to the K-Means model, we created a cluster center dataframe, inversed the scaled values and did some further analsysis. 
+After fitting the data to the K-Means model, we created a cluster center dataframe, inversed the scaled values and did some further analysis. 
 [The dataframe can be found in the code here.](Marketing_Department.ipynb#task-5-apply-k-means-method)
 
 ***Below are the categories and descriptions concluded from the cluster centers:***
@@ -168,7 +168,7 @@ Description: Customers in this cluster maintain a low balance, frequently update
 
 **Lets see what clusters our earlier observation of the Max One-Off and Max Cash Advance Customers fall in.**
 The customer with the highest One-Off Purchases is in cluster 6 which is Extremely High-Balance Low Spender.
-The customer with the highest Cash Advances is in cluster 3 whcih is High-Volume One-Off Spender.
+The customer with the highest Cash Advances is in cluster 3 which is High-Volume One-Off Spender.
 
 ### K-Means Cluster Visualization Using Principle Component Analysis (PCA)
 Principal Component Analysis (PCA) is a dimensionality reduction method that transforms a dataset with multiple dimensions into a smaller set of linearly uncorrelated variables known as principal components, which retain most of the variability present in the data. When applied prior to K-means clustering, PCA facilitates visualization in two or three dimensions, enhances computational efficiency, reduces noise, and can improve cluster separation by mitigating the curse of dimensionality. This pre-processing step can lead to more insightful and meaningful clustering results, particularly when dealing with complex, high-dimensional datasets.
@@ -199,7 +199,7 @@ Scaled Inertia Method: Based on the Scaled Inertia Method the optimal number of 
 ![Autoencoder Scaled Inertia](images/AutoencoderScaledInertia.png)
 
 ### Autoencoder Results
-We used PCA to create a visual for the Autoencoded model.
+We used PCA to create a visual for the Auto encoded model.
 ![Autoencoder PCA Plot](images/EA_PCA_Plot.png)
 
 Because of the complexity of the Autoencoder, it is very difficult to find out what actual dimensions were used. As a workaround we created a dataframe that joins the reduced clusters to the original data and then created a cluster center dataframe by using the means of the data. We finally analyzed the data and updated the categories and definitions.
