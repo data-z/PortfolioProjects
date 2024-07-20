@@ -12,7 +12,7 @@ The marketing team at the bank wants to launch a targeted ad marketing campaign 
 
 [CLICK HERE TO GO DIRECTLY TO THE CODE IN PYTHON NOTEBOOK](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Department.ipynb)
 
-[CLICK HERE TO GO DATASET](https://github.com/data-z/PortfolioProjects/blob/212ec2b7c92ae05b8dc445b558f30b0cff671d79/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_Data.csv)
+[CLICK HERE TO GO DATASET](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Marketing%20Department/Marketing_data.csv)
 
 [Go to Data Statistics](#general-statistics-of-data)
 
