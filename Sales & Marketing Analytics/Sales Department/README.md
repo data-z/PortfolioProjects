@@ -30,14 +30,14 @@ The Power BI report includes:
 ## Insights and Visualizations
 
 ### Sales YTD vs PYTD by Month
-![Sales YTD vs PYTD](path/to/sales-trend-image.png)
+![Sales YTD vs PYTD](Sales & Marketing Analytics/Sales Department/Sales YTD vs PYTD by Month.PNG)
 
 YTD sales of **3.57M** compared to PYTD sales of **3.71M** reveal a **-135.89K** decline. Key observations:
 - **February** saw a positive trend with an increase of **+0.34M**.
 - **March** and **April** experienced declines of **-0.15M** and **-0.24M**, respectively.
 
 ### Gross Profit and Sales by Product Type
-![GP% by Product Type](path/to/gp-product-type-image.png)
+![GP% by Product Type](Sales & Marketing Analytics/Sales Department/Product type.PNG)
 
 - **Indoor** products led the market in terms of sales and GP%.
 - **Landscape** and **Outdoor** products also performed well, though GP% varied by region.
