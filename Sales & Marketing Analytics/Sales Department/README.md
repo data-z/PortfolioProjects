@@ -6,7 +6,7 @@ This Power BI project showcases year-to-date (YTD) sales performance of Plant Co
 
 ## Table of Contents
 - [Dataset](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Plant_DTS.xls)
-- [Power BI Report](#power-bi-report)
+- [Power BI Report](Power-BI-Report)
 - [Insights and Visualizations](#insights-and-visualizations)
 - [DAX Measures](#dax-measures)
 - [How to Use](#how-to-use)
@@ -82,7 +82,7 @@ Several key DAX measures were used to create this Power BI report:
 These measures enabled precise calculations for revenue, gross profit, and historical comparisons. The use of **SAMEPERIODLASTYEAR** helped create comparisons between YTD and PYTD sales, providing valuable insights into performance.
 
 ## How to Use
-1. **Download** the Power BI report file from [here](path/to/powerbi-file.pbi).
+1. **Download** the Power BI report file from [here](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Performance%20Report.pbix)
 2. Open it in **Power BI Desktop**.
 3. Connect your dataset using the "Data Source" tab, and refresh to see updated insights.
 4. Explore interactive visuals to dive deeper into sales performance, GP%, and country-level data.
