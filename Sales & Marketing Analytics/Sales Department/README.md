@@ -5,9 +5,8 @@
 This Power BI project showcases year-to-date (YTD) sales performance of Plant Co., comparing it to the previous year's performance (PYTD). The report highlights gross profit, sales trends by month and country, and account profitability segmentation. This portfolio demonstrates Power BI skills in transforming data, creating visualizations, and applying DAX measures to derive key insights.
 
 ## Table of Contents
-- [Dataset](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Plant_DTS.xls)
-- [Power BI Report](Power-BI-Report)
-- [Insights and Visualizations](#insights-and-visualizations)
+- [Dataset]()
+- [Power BI Report](#power-bi-report)
 - [DAX Measures](#dax-measures)
 - [How to Use](#how-to-use)
 - [Conclusion and Future Improvements](#conclusion-and-future-improvements)
@@ -21,7 +20,7 @@ The dataset used includes detailed sales and gross profit figures, segmented by 
 - **Countries**: Canada, Colombia, Germany, and other countries with significant sales figures.
 
 ## Power BI Report
-![Power BI Dashboard](path/to/powerbi-image.png)
+![Power BI Dashboard](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/performance%20report.pdf)
 
 The Power BI report includes:
 - **Sales performance by month**: Visualizing trends from January to April 2024, comparing YTD vs PYTD sales.
@@ -83,9 +82,10 @@ These measures enabled precise calculations for revenue, gross profit, and histo
 
 ## How to Use
 1. **Download** the Power BI report file from [here](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Performance%20Report.pbix)
-2. Open it in **Power BI Desktop**.
-3. Connect your dataset using the "Data Source" tab, and refresh to see updated insights.
-4. Explore interactive visuals to dive deeper into sales performance, GP%, and country-level data.
+2. **Download** the Excel Dataset from [here](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Plant_DTS.xls)
+3. Open the Power BI file in **Power BI Desktop**.
+4. Connect your dataset using the "Data Source" tab, and refresh to see updated insights.
+5. Explore interactive visuals to dive deeper into sales performance, GP%, and country-level data.
 
 ## Conclusion and Future Improvements
 This Power BI project provides a comprehensive view of Plant Co.'s sales performance for 2024, identifying underperforming regions and product categories. Future improvements could include:
