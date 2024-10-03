@@ -30,20 +30,20 @@ The Power BI report includes:
 ## Insights and Visualizations
 
 ### Sales YTD vs PYTD by Month
-![Sales YTD vs PYTD](Sales & Marketing Analytics/Sales Department/Sales YTD vs PYTD by Month.PNG)
+![Sales YTD vs PYTD](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Sales%20YTD%20vs%20PYTD%20by%20Month.PNG)
 
 YTD sales of **3.57M** compared to PYTD sales of **3.71M** reveal a **-135.89K** decline. Key observations:
 - **February** saw a positive trend with an increase of **+0.34M**.
 - **March** and **April** experienced declines of **-0.15M** and **-0.24M**, respectively.
 
 ### Gross Profit and Sales by Product Type
-![GP% by Product Type](Sales & Marketing Analytics/Sales Department/Product type.PNG)
+![GP% by Product Type](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Product%20type.PNG)
 
 - **Indoor** products led the market in terms of sales and GP%.
 - **Landscape** and **Outdoor** products also performed well, though GP% varied by region.
 
 ### Bottom 10 Countries by YTD vs PYTD Performance
-![Bottom 10 Countries](path/to/bottom10-countries.png)
+![Bottom 10 Countries](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Bottom%2010.PNG)
 
 The bottom 10 countries (e.g., **Canada** and **Colombia**) saw significant sales declines:
 - **Canada**: Sales declined by **-73.71K**.
