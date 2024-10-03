@@ -37,8 +37,10 @@ YTD sales of **3.57M** compared to PYTD sales of **3.71M** reveal a **-135.89K**
 - **March** and **April** experienced declines of **-0.15M** and **-0.24M**, respectively.
 
 ### Gross Profit and Sales by Product Type
-![GP% by Product Type](https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Product%20type.PNG)
-
+<p align="center">
+  <img src="https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Product%20type.PNG" alt="GP% by Product Type" width="45%" />
+  <img src="https://github.com/data-z/PortfolioProjects/blob/main/Sales%20%26%20Marketing%20Analytics/Sales%20Department/Product%20type%20GP.PNG" alt="Product Type GP%" width="45%" />
+</p>
 - **Indoor** products led the market in terms of sales and GP%.
 - **Landscape** and **Outdoor** products also performed well, though GP% varied by region.
 
