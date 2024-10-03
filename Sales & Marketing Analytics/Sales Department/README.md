@@ -5,7 +5,7 @@
 This Power BI project showcases year-to-date (YTD) sales performance of Plant Co., comparing it to the previous year's performance (PYTD). The report highlights gross profit, sales trends by month and country, and account profitability segmentation. This portfolio demonstrates Power BI skills in transforming data, creating visualizations, and applying DAX measures to derive key insights.
 
 ## Table of Contents
-- [Dataset]()
+- [Dataset](#dataset)
 - [Power BI Report](#power-bi-report)
 - [DAX Measures](#dax-measures)
 - [How to Use](#how-to-use)
